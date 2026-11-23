@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.menu {
+    background-color: #080808;
+    padding: 20px 30px;
+}
+
+.logo {
+    color: #d4af37 !important;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 12px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important;
+    transform: translateY(-5px);
+}
+.portada {
+    height: 65vh;
+    min-height: 450px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.7)
+        ),
+        url("imagesL/chentenario.jpg");
+
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenido-portada {
+    padding: 20px;
+    animation: aparecer 1.5s ease;
+}
+.contenido-portada h1 {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.contenido-portada h2 {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.contenido-portada p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.titulo-seccion {
+    color: #d4af37;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.texto-seccion {
+    color: #cccccc;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#carouselExampleIndicators .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* para txt chat*/
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+}
+
+.tarjeta-auto {
+    background-color: #181818;
+    color: white;
+    border: 1px solid #444444;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-auto:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-auto img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card-text {
+    color: #cccccc;
+     background-color: transparent;
+    font-size: 16px;
+}
+.btn {
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-dorado {
+    background-color: #d4af37;
+     border-color: #d4af37;
+    color: black;
+    font-weight: bold;
+     transition: transform 0.3s ease;
+}
+
+.btn-dorado:hover {
+    background-color: #f0ce65;
+     border-color: #f0ce65;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #050505;
+    color: #999999;
+}
+
+footer p {
+    margin: 5px;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (min-width: 768px) {
+
+    #carouselExampleIndicators {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #carouselExampleIndicators .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .portada {
+        height: 75vh;
+        min-height: 450px;
+    }
+
+    .contenido-portada h1 {
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+
+    .contenido-portada h2 {
+        font-size: 15px;
+    }
+
+    .contenido-portada p {
+        font-size: 13px;
+    }
+
+    .titulo-seccion {
+        font-size: 24px;
+    }
+
+    .texto-seccion {
+        font-size: 16px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 13px;
+    }
+
+}
+@media (prefers-reduced-motion: reduce) {
+
+    .contenido-portada {
+        animation: none;
+    }
+
+    .tarjeta-auto,
+    .btn,
+    .nav-link {
+        transition: none;
+    }
+}
+@media (max-width: 991px) {
+
+    .titulo-seccion {
+        font-size: 28px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .texto-seccion {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

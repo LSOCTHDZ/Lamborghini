@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Proyecto LAMBORGHINI">
+    <meta name="description" content="Suscripción a novedades Lamborghini">
+    <title>SUSCRIPCIÓN - LAMBORGHINI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html">
+                LAMBORGHINI
+            </a>
+
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Abrir Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            INICIO
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelos.html">
+                            MODELOS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">
+                            HISTORIA
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="acerca.html">
+                            ACERCA DE
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            CONTACTO
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="suscripcion.html">
+                            SUSCRIPCION
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5 mb-5">
+
+        <h1 class="titulo-seccion">
+            SUSCRÍBETE A LAMBORGHINI
+        </h1>
+
+        <p class="texto-seccion">
+          no te suscribas esta pagina ya no se va 
+          a actualizar
+        </p>
+
+        <span class="badge bg-warning text-dark">
+            NOVEDADES EXCLUSIVAS
+        </span>
+
+    </div>
+<!--todo lo de aqui se lo copee a un wei de taiwan-->
+    <div class="container mt-5 mb-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-10 col-lg-7">
+
+                <div class="card tarjeta-auto">
+
+                    <div class="card-body p-4 p-md-5">
+
+                        <h2 class="titulo-seccion text-center mb-4">
+                            FORMULARIO DE SUSCRIPCIÓN
+                        </h2>
+
+                        <form id="formSuscripcion">
+
+                            <div class="mb-4">
+                                <label for="nombreSuscripcion"
+                                class="form-label text-white">
+                                    NOMBRE COMPLETO
+                                </label>
+
+                                <input type="text"
+                                class="form-control"
+                                id="nombreSuscripcion"
+                                placeholder="Escribe tu nombre"
+                                required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="correoSuscripcion"
+                                class="form-label text-white">
+                                    CORREO ELECTRÓNICO
+                                </label>
+
+                                <input type="email"
+                                class="form-control"
+                                id="correoSuscripcion"
+                                placeholder="ejemplo@correo.com"
+                                required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="modeloFavorito"
+                                class="form-label text-white">
+                                    ¿CUÁL ES TU MODELO FAVORITO?
+                                </label>
+
+                                <select class="form-select"
+                                id="modeloFavorito"
+                                required>
+
+                                    <option value="" selected disabled>
+                                        Selecciona un modelo
+                                    </option>
+
+                                    <option value="Revuelto">
+                                        Lamborghini Revuelto
+                                    </option>
+
+                                    <option value="Temerario">
+                                        Lamborghini Temerario
+                                    </option>
+
+                                    <option value="Urus">
+                                        Lamborghini Urus
+                                    </option>
+
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label text-white">
+                                    ¿QUÉ INFORMACIÓN TE INTERESA?
+                                </label>
+
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                    type="checkbox"
+                                    id="nuevosModelos">
+
+                                    <label class="form-check-label text-white"
+                                    for="nuevosModelos">
+                                        Nuevos modelos
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                    type="checkbox"
+                                    id="tecnologia">
+
+                                    <label class="form-check-label text-white"
+                                    for="tecnologia">
+                                        Tecnología e innovación
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                    type="checkbox"
+                                    id="historiaLamborghini">
+
+                                    <label class="form-check-label text-white"
+                                    for="historiaLamborghini">
+                                        Historia de Lamborghini
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="form-check mb-4">
+
+                                <input class="form-check-input"
+                                type="checkbox"
+                                id="aceptarSuscripcion"
+                                required>
+
+                                <label class="form-check-label text-white"
+                                for="aceptarSuscripcion">
+                                    si acepto participar aqui
+                                    le tengo que dar pa los chicles 
+                                    al desarrollador oseaa me
+                                </label>
+
+                            </div>
+
+                            <div class="text-center">
+
+                                <button type="submit"
+                                class="btn btn-dorado btn-lg">
+                                    SUSCRIBIRME
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                        <div id="respuestaSuscripcion"
+                        class="alert alert-success mt-4 d-none"
+                        role="alert">
+                            ¡Formulario completado correctamente!
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container text-center mt-5 mb-5">
+
+        <h2 class="titulo-seccion">
+            DESCUBRE MÁS DE LAMBORGHINI
+        </h2>
+
+        <p class="texto-seccion">
+            Explora nuestros modelos y conoce
+            la innovación que caracteriza
+            a Lamborghini.
+        </p>
+
+        <a href="modelos.html" class="btn btn-outline-light">
+            VER MODELOS
+        </a>
+
+    </div>
+
+    <footer class="text-center py-4">
+        <p>© 2026 LAMBORGHINI.</p>
+        <p>
+            Este no es un sitio oficial ala marca
+            todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("formSuscripcion")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("respuestaSuscripcion")
+            .classList.remove("d-none");
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
